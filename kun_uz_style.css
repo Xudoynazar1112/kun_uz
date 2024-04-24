@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    margin-top: 30px;
+}
+html::-webkit-scrollbar{
+    width: 12px;
+    height: 10px;
+
+}
+html::-webkit-scrollbar-track{
+    background-color: #bab9b9;
+
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: darkblue;   
+}
+.container{
+    padding:0 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .left_items {
+    text-transform: uppercase;
+    color: rgb(0, 0, 203);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+nav span {
+    color: white;
+    background-color: rgb(0, 0, 203);
+    border-radius: 50%;
+}
+nav .left_items ul{
+    color: black;
+    list-style-type: none;
+    display: flex;
+    padding-left: 30px;
+    gap: 25px;
+    font-size: 15px;
+    align-items: center;
+
+}
+nav .right_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 50px; */
+    gap: 10px;
+}
+nav .right_items select {
+    border-radius: 20px;
+    font-size: large;
+    background-color: #cecbcb;
+    border-style: none;
+}
+nav .right_items select:hover{
+    color: rgb(251, 251, 251);
+    cursor: pointer;
+}
+.search_icon {
+    font-size: 17px;
+    color: #7e7b7b;
+    background-color: #cecbcb;
+    border-radius: 50%;
+    padding: 3px;
+}
+nav .search_icon:hover{
+    color: aqua;
+    cursor: pointer;
+    transition: ease-in 0.3s;
+}
+.viloyatlar ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    background-color: rgb(232, 232, 232);
+    text-align: center;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+.viloyatlar ul::-webkit-scrollbar{
+    height: 5px;
+}
+.viloyatlar ul::-webkit-scrollbar-track{
+    background-color: #bab9b9;
+}
+.viloyatlar ul::-webkit-scrollbar-thumb{
+    background-color: rgb(41, 41, 218);
+}
+.viloyatlar ul li {
+    color: rgb(82, 82, 82);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+ .viloyatlar ul li span{
+    width: 2px;
+    height: 15px;
+    border-left:  1px solid #232323;  
+}
+ .viloyatlar #hududlar {
+    background-color: rgb(0, 0, 216);
+    color: white;
+}
+nav .left_items ul li:hover{
+    color: blue;
+    cursor: pointer;
+}
+ .viloyatlar ul li:hover{
+    color: rgb(13, 119, 119);
+}
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+main .main_left .rang {
+    background-color: rgb(235, 255, 255);
+}
+main .main_left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    gap: 10px;
+}
+.main_left_rasm img{
+    width: 100%;
+    height: 100%;
+}
+main .main_left .main_left_matn {
+    text-align: left;    
+    cursor: pointer;
+}
+main .main_left .kichik_malumotlar {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    height: 100px;
+    gap: 10px;
+}
+main .main_left .kichik_malumotlar .malumotcha_info {
+    font-size: 12px;
+    border-bottom: 1px solid black;
+    padding: 0px;
+    cursor: pointer;
+}
+.malumotcha_info p{
+    text-align: left;
+}
+main .main_left .kichik_malumotlar .malumotcha_icon_time {
+    display: flex;
+    gap: 3px;
+}
+.uchgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    cursor: pointer;
+}
+.uchgrid .gridbir img {
+    height: 150px;
+}
+.uchgrid .gridikki img {
+    height: 150px;
+}
+.uchgrid .griduch img {
+    height: 150px;
+}
+main .main_right {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+main .main_right .main_right_title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main .main_right .main_right_title h4 {
+    font-size: 20px;
+}
+main .main_right .kok_doira {
+    background-color: darkblue;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main_right .kok_doira span {
+    height: 9px;
+    width: 9px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.main_right_icon_time {
+   
+    opacity: 0.3;
+    gap: 7px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+}
+.main_right_info {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+.main_right_info hr {
+    margin: 15px 0;
+    opacity: 0.5;
+}
+.time {
+    font-size: 13px;
+}
+.koproq_yangiliklar {
+    padding: 5px 8px;
+    background-color: rgb(235, 232, 232);
+    border-left:2px solid blue;
+    border-radius: 0 45px 45px 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.koproq_yangiliklar span {
+    font-size: 25px;
+    font-weight: 600;
+}
+.koproq_yangiliklar a{
+    text-decoration: none;
+}
+footer {
+    padding-top: 20px;
+    margin-top: 35px;
+}
+footer .footer_title {
+    background-color: blue;
+    height: 50px;
+    color: white;
+    padding-left: 15px;
+
+}
+footer .footer_title ul {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-left: 20px;
+}
+footer .footer_main {
+    display: grid;
+    grid-template-columns: 1.4fr .6fr;
+    background-color: darkblue;
+    color: white;
+    padding: 15px;
+
+}
+footer .footer_main_left p {
+    font-size: 14px;
+    padding: 10px 25px;
+}
+footer .footer_main_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+}
